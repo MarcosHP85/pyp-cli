@@ -3,546 +3,195 @@
     "title"  : "Órdenes de trabajo",
     "name"   : "ACTIVE_SEPARATE_OVERVIEW",
     "columns": [
-      {
-        "name" : "WO_NO", "title" : "Nº OT", "default": true
-      }, 
-      {
-        "name" : "ERR_DESCR", "title" : "Directive", "default": false
-      }, 
-      {
-        "name" : "ERR_DESCR_LO", "title" : "Fault Desc.", "default": false
-      }, 
-      {
-        "name" : "PLAN_S_DATE", "title" : "Planned Start", "default": false
-      }, 
-      {
-        "name" : "VENDOR_NO", "title" : "SupplierInfo", "default": false
-      }, 
-      {
-        "name" : "PM_TYPE", "title" : "PmType", "default": false
-      }, 
-      {
-        "name" : "PM_TYPE_DB", "title" : "Pm type", "default": false
-      }, 
-      {
-        "name" : "REPORTED_BY_ID", "title" : "CompanyEmp(Company)", "default": false
-      }, 
-      {
-        "name" : "REPORTED_BY", "title" : "Reported by", "default": false
-      }, 
-      {
-        "name" : "PRIORITY_ID", "title" : "MaintenancePriority", "default": false
-      }, 
-      {
-        "name" : "ORG_CODE", "title" : "Organization(Contract)", "default": false
-      }, 
-      {
-        "name" : "ERR_DISCOVER_CODE", "title" : "WorkOrderDiscCode", "default": false
-      }, 
-      {
-        "name" : "ERR_SYMPTOM", "title" : "WorkOrderSymptCode", "default": false
-      }, 
-      {
-        "name" : "WORK_TYPE_ID", "title" : "WorkType", "default": false
-      }, 
-      {
-        "name" : "CALL_CODE", "title" : "MaintenanceEvent", "default": false
-      }, 
-      {
-        "name" : "COMPANY", "title" : "Company", "default": false
-      }, 
-      {
-        "name" : "COST_CENTER", "title" : "CodeB(Company)/NOCHECK", "default": false
-      }, 
-      {
-        "name" : "OBJECT_NO", "title" : "CodeE(Company)/NOCHECK", "default": false
-      }, 
-      {
-        "name" : "CODE_C", "title" : "CodeC(COMPANY)/NOCHECK", "default": false
-      }, 
-      {
-        "name" : "CODE_D", "title" : "CodeD(COMPANY)/NOCHECK", "default": false
-      }, 
-      {
-        "name" : "CODE_G", "title" : "CodeG(COMPANY)/NOCHECK", "default": false
-      }, 
-      {
-        "name" : "CODE_H", "title" : "CodeH(COMPANY)/NOCHECK", "default": false
-      }, 
-      {
-        "name" : "CODE_I", "title" : "CodeI(COMPANY)/NOCHECK", "default": false
-      }, 
-      {
-        "name" : "CODE_J", "title" : "CodeJ(COMPANY)/NOCHECK", "default": false
-      }, 
-      {
-        "name" : "CODE_F", "title" : "CodeF(COMPANY)/NOCHECK", "default": false
-      }, 
-      {
-        "name" : "CONTRACT", "title" : "Site", "default": false
-      }, 
-      {
-        "name" : "MCH_CODE", "title" : "MaintenanceObject(mch_code_contract)", "default": false
-      }, 
-      {
-        "name" : "OP_STATUS_ID", "title" : "OperationalStatus", "default": false
-      }, 
-      {
-        "name" : "TEST_POINT_ID", "title" : "EquipmentObjectTestPnt(mch_code_contract, mch_code)", "default": false
-      }, 
-      {
-        "name" : "WORK_MASTER_SIGN_ID", "title" : "CompanyEmp(Company)", "default": false
-      }, 
-      {
-        "name" : "WORK_MASTER_SIGN", "title" : "Executed By", "default": false
-      }, 
-      {
-        "name" : "WORK_LEADER_SIGN_ID", "title" : "CompanyEmp(Company)", "default": false
-      }, 
-      {
-        "name" : "WORK_LEADER_SIGN", "title" : "Work leader sign", "default": false
-      }, 
-      {
-        "name" : "PREPARED_BY_ID", "title" : "CompanyEmp(Company)", "default": false
-      }, 
-      {
-        "name" : "PREPARED_BY", "title" : "Prepared by", "default": false
-      }, 
-      {
-        "name" : "AUTHORIZE_CODE", "title" : "OrderCoordinator/NOCHECK", "default": false
-      }, 
-      {
-        "name" : "PM_NO", "title" : "PmAction(pm_revision)", "default": false
-      }, 
-      {
-        "name" : "PM_REVISION", "title" : "PmAction(pm_no)/NOCHECK", "default": false
-      }, 
-      {
-        "name" : "PROJECT_NO", "title" : "Project no", "default": false
-      }, 
-      {
-        "name" : "REG_DATE", "title" : "Registration Date", "default": false
-      }, 
-      {
-        "name" : "PLAN_F_DATE", "title" : "Planned Completion", "default": false
-      }, 
-      {
-        "name" : "WORK_DESCR_LO", "title" : "Work Description", "default": false
-      }, 
-      {
-        "name" : "PLAN_HRS", "title" : "Planned Hours", "default": false
-      }, 
-      {
-        "name" : "ACTIVITY_SEQ", "title" : "Activity", "default": false
-      }, 
-      {
-        "name" : "PRE_ACCOUNTING_ID", "title" : "PreAccounting", "default": false
-      }, 
-      {
-        "name" : "LAST_ACTIVITY_DATE", "title" : "Last Activity Date", "default": false
-      }, 
-      {
-        "name" : "REQUIRED_START_DATE", "title" : "Required Start Date", "default": false
-      }, 
-      {
-        "name" : "REQUIRED_END_DATE", "title" : "Required End Date", "default": false
-      }, 
-      {
-        "name" : "PERFORMED_ACTION_LO", "title" : "Performed Action Text", "default": false
-      }, 
-      {
-        "name" : "REPAIR_FLAG", "title" : "Repair Flag", "default": false
-      }, 
-      {
-        "name" : "CONTACT", "title" : "Contact", "default": false
-      }, 
-      {
-        "name" : "PHONE_NO", "title" : "Phone No", "default": false
-      }, 
-      {
-        "name" : "CUSTOMER_NO", "title" : "CustomerInfo/NOCHECK", "default": false
-      }, 
-      {
-        "name" : "ADDRESS_ID", "title" : "Address Id", "default": false
-      }, 
-      {
-        "name" : "REFERENCE_NO", "title" : "Reference No", "default": false
-      }, 
-      {
-        "name" : "FIXED_PRICE", "title" : "FixedPrice", "default": false
-      }, 
-      {
-        "name" : "FIXED_PRICE_DB", "title" : "Fixed Price", "default": false
-      }, 
-      {
-        "name" : "FAULT_REP_FLAG", "title" : "FaultRepFlag", "default": false
-      }, 
-      {
-        "name" : "QUOTATION_ID", "title" : "WorkOrderQuotation", "default": false
-      }, 
-      {
-        "name" : "CRITICALITY", "title" : "EquipmentCriticality", "default": false
-      }, 
-      {
-        "name" : "GROUP_ID", "title" : "EquipmentObjGroup", "default": false
-      }, 
-      {
-        "name" : "CUST_ORDER_TYPE", "title" : "Cust Order Type", "default": false
-      }, 
-      {
-        "name" : "CUST_ORDER_NO", "title" : "Cust Order No", "default": false
-      }, 
-      {
-        "name" : "PLANNED_MAN_HRS", "title" : "Planned Man Hrs", "default": false
-      }, 
-      {
-        "name" : "MCH_CODE_CONTRACT", "title" : "Site", "default": false
-      }, 
-      {
-        "name" : "MCH_CODE_DESCRIPTION", "title" : "Mch Code Description", "default": false
-      }, 
-      {
-        "name" : "CONNECTION_TYPE", "title" : "MaintConnectionType", "default": false
-      }, 
-      {
-        "name" : "RECEIVE_ORDER_NO", "title" : "Receive Order No", "default": false
-      }, 
-      {
-        "name" : "ADDRESS1", "title" : "Address1", "default": false
-      }, 
-      {
-        "name" : "ADDRESS2", "title" : "Address2", "default": false
-      }, 
-      {
-        "name" : "ADDRESS3", "title" : "Zip Code", "default": false
-      }, 
-      {
-        "name" : "ADDRESS4", "title" : "City", "default": false
-      }, 
-      {
-        "name" : "ADDRESS5", "title" : "State", "default": false
-      }, 
-      {
-        "name" : "ADDRESS6", "title" : "Country", "default": false
-      }, 
-      {
-        "name" : "ADDRESS7", "title" : "Country Code", "default": false
-      }, 
-      {
-        "name" : "CONTRACT_ID", "title" : "ScServiceContract", "default": false
-      }, 
-      {
-        "name" : "LINE_NO", "title" : "PscContrProduct(contract_id)", "default": false
-      }, 
-      {
-        "name" : "AGREEMENT_ID", "title" : "CustomerAgreement", "default": false
-      }, 
-      {
-        "name" : "CURRENCY_CODE", "title" : "IsoCurrency", "default": false
-      }, 
-      {
-        "name" : "SCHEDULING_CONSTRAINTS", "title" : "SchedulingConstraints", "default": false
-      }, 
-      {
-        "name" : "SCHEDULING_CONSTRAINTS_DB", "title" : "Scheduling Constraints", "default": false
-      }, 
-      {
-        "name" : "TEXT_ID$", "title" : "text_id$", "default": false
-      }, 
-      {
-        "name" : "TEMP_MOB_WO", "title" : "Temporary Mobile Work Order Number", "default": false
-      }, 
-      {
-        "name" : "GENERA_EVENTO", "title" : "Genera Evento", "default": false
-      }, 
-      {
-        "name" : "REQUIERE_ANALISIS", "title" : "Requiere Análisis", "default": false
-      }, 
-      {
-        "name" : "REQUIERE_QC", "title" : "Requiere QC", "default": false
-      }, 
-      {
-        "name" : "CATEGORY_ID", "title" : "Clase Seg.", "default": false
-      }, 
-      {
-        "name" : "CATEGORY_DESC", "title" : "Desc.Clase Seg", "default": false
-      }, 
-      {
-        "name" : "MCH_TYPE", "title" : "Tipo Objeto", "default": false
-      }, 
-      {
-        "name" : "MCH_TYPE_DESC", "title" : "Desc Tipo Objeto", "default": false
-      }, 
-      {
-        "name" : "PLANNED_WEEK", "title" : "Semana", "default": false
-      }, 
-      {
-        "name" : "REQ_PAQ_TAB", "title" : "Requiere Paq Trabajo", "default": false
-      }, 
-      {
-        "name" : "TIPO_PARADA", "title" : "AtuTipoParada", "default": false
-      }, 
-      {
-        "name" : "COM_PLA_PRO", "title" : "Coment.Planif a Prog", "default": false
-      }, 
-      {
-        "name" : "COM_MAN_PRO", "title" : "Coment.Mant a Prog", "default": false
-      }, 
-      {
-        "name" : "COM_MAN", "title" : "Coment.Mant", "default": false
-      }, 
-      {
-        "name" : "COM_INT_MAN", "title" : "Coment.Int a Mant", "default": false
-      }, 
-      {
-        "name" : "OT_REPROGRAMADA", "title" : "OT Reprogramada", "default": false
-      }, 
-      {
-        "name" : "OT_ESTADO_ANT", "title" : "Estado Anterior OT", "default": false
-      }, 
-      {
-        "name" : "COM_INT_PLA", "title" : "Coment.Internos Planif", "default": false
-      }, 
-      {
-        "name" : "COM_IMP_PLA", "title" : "Coment.Imprimir Planif", "default": false
-      }, 
-      {
-        "name" : "COM_INT_PRO", "title" : "Coment.Internos Prog", "default": false
-      }, 
-      {
-        "name" : "COM_IMP_PRO", "title" : "Coment.Imprimir Prog", "default": false
-      }, 
-      {
-        "name" : "COM_IMP_ARE", "title" : "Coment.Imprimir Areas", "default": false
-      }, 
-      {
-        "name" : "FECHA_RECHEQUEO", "title" : "Fecha Rechequeo", "default": false
-      }, 
-      {
-        "name" : "CONFIRMACION_1", "title" : "Confirmacion 1", "default": false
-      }, 
-      {
-        "name" : "CONFIRMACION_2", "title" : "Confirmacion 2", "default": false
-      }, 
-      {
-        "name" : "CRITERIO_SEG", "title" : "Criterio Seguimiento", "default": false
-      }, 
-      {
-        "name" : "AGRUP_PROG", "title" : "Agrup. Prog.", "default": false
-      }, 
-      {
-        "name" : "OPCION_PP", "title" : "Opcion PP", "default": false
-      }, 
-      {
-        "name" : "PALABRA_CLAVE", "title" : "Palabra Clave", "default": false
-      }, 
-      {
-        "name" : "FIRMA_PAQ_TRAB", "title" : "Firma Paq Trab", "default": false
-      }, 
-      {
-        "name" : "ORDER_GANTT", "title" : "Orden Gantt", "default": false
-      }, 
-      {
-        "name" : "VB_PLA", "title" : "VB Planificacion", "default": false
-      }, 
-      {
-        "name" : "SUBESTADO_PLANIF", "title" : "AtuSubEstPlan", "default": false
-      }, 
-      {
-        "name" : "ANTIGUEDAD", "title" : "Antiguedad", "default": false
-      }, 
-      {
-        "name" : "PLAZO_PLANIF", "title" : "Plazo Planificacion", "default": false
-      }, 
-      {
-        "name" : "TAREA", "title" : "Tarea", "default": false
-      }, 
-      {
-        "name" : "MANO_OBRA", "title" : "Mano Obra", "default": false
-      }, 
-      {
-        "name" : "COMENT_OTRAS_AREAS", "title" : "Comentarios Areas", "default": false
-      }, 
-      {
-        "name" : "ORDEN_CAMBIO", "title" : "Orden Cambio", "default": false
-      }, 
-      {
-        "name" : "ETAPA", "title" : "Etapa OC", "default": false
-      }, 
-      {
-        "name" : "RIESGO_NUCLEAR", "title" : "AtuRNuclear", "default": false
-      }, 
-      {
-        "name" : "RIESGO_RADIOLOG", "title" : "AtuRRadiolog", "default": false
-      }, 
-      {
-        "name" : "COMPLEJ_TAREA", "title" : "AtuComplejT", "default": false
-      }, 
-      {
-        "name" : "EME", "title" : "AtuEme", "default": false
-      }, 
-      {
-        "name" : "SEGUIMIENTO_PROG", "title" : "AtuSegProg", "default": false
-      }, 
-      {
-        "name" : "COMENT_SEG_PROG", "title" : "Comentario Seg Prog", "default": false
-      }, 
-      {
-        "name" : "LOG_SEG_PROG", "title" : "Log seg Prog", "default": false
-      }, 
-      {
-        "name" : "TIPO_PAQ_TRAB", "title" : "Tipo Paq Trabajo", "default": false
-      }, 
-      {
-        "name" : "FRECUENCIA", "title" : "Frecuencia", "default": false
-      }, 
-      {
-        "name" : "DISP_PROC_TEC", "title" : "Disp Proc Tec", "default": false
-      }, 
-      {
-        "name" : "REVISION_PAQ_TRAB", "title" : "Revision Paq Trab", "default": false
-      }, 
-      {
-        "name" : "SISTEMA", "title" : "Sistema", "default": false
-      }, 
-      {
-        "name" : "MCH_LOC", "title" : "Room", "default": false
-      }, 
-      {
-        "name" : "MCH_POS", "title" : "Position", "default": false
-      }, 
-      {
-        "name" : "REQUIERE_PPM", "title" : "Requiere PPM", "default": false
-      }, 
-      {
-        "name" : "ANALIZA_EVENTO", "title" : "Organization(Contract)", "default": false
-      }, 
-      {
-        "name" : "WO_NO_MADRE", "title" : "OT Madre", "default": true
-      }, 
-      {
-        "name" : "WO_NO_HIJAS", "title" : "OT Hijas", "default": false
-      }, 
-      {
-        "name" : "EQUIPO_MADRE", "title" : "MaintenanceObject(mch_code_contract)", "default": false
-      }, 
-      {
-        "name" : "USUARIO_QC", "title" : "Usuario Qc", "default": false
-      }, 
-      {
-        "name" : "USUARIO_CREACION", "title" : "Usuario Creacion", "default": false
-      }, 
-      {
-        "name" : "LUNES", "title" : "Lunes", "default": false
-      }, 
-      {
-        "name" : "MARTES", "title" : "Martes", "default": false
-      }, 
-      {
-        "name" : "MIERCOLES", "title" : "Miercoles", "default": false
-      }, 
-      {
-        "name" : "JUEVES", "title" : "Jueves", "default": false
-      }, 
-      {
-        "name" : "VIERNES", "title" : "Viernes", "default": false
-      }, 
-      {
-        "name" : "SABADO", "title" : "Sabado", "default": false
-      }, 
-      {
-        "name" : "DOMINGO", "title" : "Domingo", "default": false
-      }, 
-      {
-        "name" : "FECHA_GRACIA", "title" : "Fecha Gracia", "default": false
-      }, 
-      {
-        "name" : "FECHA_DIFERIMIENTO", "title" : "Fecha Diferimiento", "default": false
-      }, 
-      {
-        "name" : "ESTADO_PREVENTIVO", "title" : "Estado Preventivo", "default": false
-      }, 
-      {
-        "name" : "NOTAS_QC", "title" : "Notas QC", "default": false
-      }, 
-      {
-        "name" : "TIENE_NOTAS_QC", "title" : "Tiene Notas QC", "default": false
-      }, 
-      {
-        "name" : "NOTAS_ING", "title" : "Notas ING", "default": false
-      }, 
-      {
-        "name" : "TIENE_NOTAS_ING", "title" : "Tiene Notas ING", "default": false
-      }, 
-      {
-        "name" : "LIBERACION_PR", "title" : "Liberación PR", "default": false
-      }, 
-      {
-        "name" : "SOL_SPC", "title" : "AtuSolSpc", "default": false
-      },
-      {
-        "name" : "EST_PLA_SPC", "title" : "AtuEstPlaSpc", "default": false
-      }, 
-      {
-        "name" : "SECCION_SPC", "title" : "AtuSeccionSpc(contract,org_code)", "default": false
-      }, 
-      {
-        "name" : "OBS_SPC", "title" : "Observaciones", "default": false
-      }, 
-      {
-        "name" : "ORIGEN_SPC", "title" : "Origen", "default": false
-      }, 
-      {
-        "name" : "LUG_EJEC_SPC", "title" : "AtuLugEjecSpc", "default": false
-      },
-      {
-        "name" : "REQUIERE_TARJETA", "title" : "Requiere Tarjeta", "default": false
-      }, 
-      {
-        "name" : "OBS_TARJETA", "title" : "Seguimiento Tarjeta", "default": false
-      }, 
-      {
-        "name" : "TARJETA_RETIRADA", "title" : "Tarjeta Retirada", "default": false
-      }, 
-      {
-        "name" : "NOTAS_CONC", "title" : "Notas", "default": false
-      }, 
-      {
-        "name" : "TEST_RESULT", "title" : "Resultado Prueba", "default": false
-      }, 
-      {
-        "name" : "TEST_COMMENT", "title" : "Comentarios Prueba", "default": false
-      }, 
-      {
-        "name" : "OK_ING", "title" : "Aprobación Ingeniería", "default": false
-      }, 
-      {
-        "name" : "OPO_D", "title" : "OPO-D", "default": false
-      }, 
-      {
-        "name" : "OPO_A", "title" : "OPO-A", "default": false
-      }, 
-      {
-        "name" : "ALARA", "title" : "ALARA", "default": false
-      }, 
-      {
-        "name" : "TESTNUMBER", "title" : "PI", "default": false
-      }, 
-      {
-        "name" : "SEGUIMIENTO", "title" : "Seguimiento", "default": false
-      }, 
-      {
-        "name" : "FIRMA_EVALUADOR", "title" : "Firma Evaluador", "default": false
-      }, 
-      {
-        "name" : "NOTAS_MOTIVO", "title" : "Notas Motivo", "default": false
-      }, 
-      {
-        "name" : "EQUIPOS_INDISPONIBLES", "title" : "Equipos Indisponibles", "default": false
-      }, 
-      {
-        "name" : "NOVEDAD_SEMANAL", "title" : "Novedad Semanal", "default": false
-      }
+      { "name": "WO_NO", "title": "Nº OT", "default": true },
+      { "name": "STATE", "title": "Estado", "default": true },
+      { "name": "WO_NO_MADRE", "title": "OT Madre", "default": true },
+      { "name": "REAL_F_DATE", "title": "Finalización Real", "default": true },
+      { "name": "CONTRACT", "title": "Planta OT", "default": true },
+      { "name": "SUBESTADO_PLANIF", "title": "Subestado planif", "default": true },
+      { "name": "COM_INT_PLA", "title": "Com int pla", "default": true },
+      { "name": "PLAN_F_DATE", "title": "Fin Prog", "default": true },
+      { "name": "PLAN_S_DATE", "title": "Inicio Prog", "default": true },
+      { "name": "MCH_CODE", "title": "Componente", "default": true },
+      { "name": "ORG_CODE", "title": "Org Mant", "default": true },
+      { "name": "TIPO_PARADA", "title": "Tipo parada", "default": true },
+      { "name": "WORK_TYPE_ID", "title": "Tipo Trabajo", "default": true },
+      { "name": "PRIORITY_ID", "title": "Prioridad", "default": true },
+      { "name": "TAREA", "title": "Tarea", "default": true },
+      { "name": "CATEGORY_ID", "title": "Clase Seg", "default": true },
+      { "name": "REG_DATE", "title": "Fecha Registro", "default": true },
+      { "name": "FIRMA_PAQ_TRAB", "title": "Firma paq trab", "default": true },
+      { "name": "WORK_LEADER_SIGN", "title": "Resp.Tarea", "default": true },
+      { "name": "CONFIRMACION_1", "title": "Confirmacion 1", "default": true },
+      { "name": "PREPARED_BY", "title": "Planifica", "default": true },
+      { "name": "COM_INT_PRO", "title": "Com int pro", "default": true },
+      { "name": "MCH_LOC", "title": "Recinto", "default": true },
+      { "name": "MCH_POS", "title": "Pos.en Tab.", "default": true },
+      { "name": "COM_PLA_PRO", "title": "Com pla pro", "default": true },
+      { "name": "COM_IMP_PLA", "title": "Com imp pla", "default": true },
+      { "name": "COM_IMP_PRO", "title": "Com imp pro", "default": true },
+      { "name": "REQ_PAQ_TAB", "title": "Requiere Paq Trabajo", "default": true },
+      { "name": "PALABRA_CLAVE", "title": "Palabra clave", "default": true },
+      { "name": "NOTAS_MOTIVO", "title": "Notas Motivo", "default": true },
+      { "name": "EQUIPOS_INDISPONIBLES", "title": "Equipos Indisponibles", "default": true },
+      { "name": "TIPO_PAQ_TRAB", "title": "Tipo paq trab", "default": true },
+      { "name": "PERFORMED_ACTION_LO", "title": "Acción Ejecutada", "default": true },
+      { "name": "ERR_DESCR", "title": "Directiva", "default": false },
+      { "name": "ERR_DESCR_LO", "title": "Descrip. Fallo", "default": false },
+      { "name": "VENDOR_NO", "title": "Contratista", "default": false },
+      { "name": "PM_TYPE", "title": "PM_TYPE", "default": false },
+      { "name": "PM_TYPE_DB", "title": "Tipo MP", "default": false },
+      { "name": "REPORTED_BY_ID", "title": "REPORTED_BY_ID", "default": false },
+      { "name": "REPORTED_BY", "title": "Reportado", "default": false },
+      { "name": "ERR_DISCOVER_CODE", "title": "ERR_DISCOVER_CODE", "default": false },
+      { "name": "ERR_SYMPTOM", "title": "ERR_SYMPTOM", "default": false },
+      { "name": "CALL_CODE", "title": "Evento", "default": false },
+      { "name": "COMPANY", "title": "COMPANY", "default": false },
+      { "name": "COST_CENTER", "title": "COST_CENTER", "default": false },
+      { "name": "OBJECT_NO", "title": "OBJECT_NO", "default": false },
+      { "name": "CODE_C", "title": "CODE_C", "default": false },
+      { "name": "CODE_D", "title": "CODE_D", "default": false },
+      { "name": "CODE_G", "title": "CODE_G", "default": false },
+      { "name": "CODE_H", "title": "CODE_H", "default": false },
+      { "name": "CODE_I", "title": "CODE_I", "default": false },
+      { "name": "CODE_J", "title": "CODE_J", "default": false },
+      { "name": "CODE_F", "title": "CODE_F", "default": false },
+      { "name": "OP_STATUS_ID", "title": "Estado Operativo", "default": false },
+      { "name": "TEST_POINT_ID", "title": "TEST_POINT_ID", "default": false },
+      { "name": "WORK_MASTER_SIGN_ID", "title": "WORK_MASTER_SIGN_ID", "default": false },
+      { "name": "WORK_MASTER_SIGN", "title": "Ejecutado por", "default": false },
+      { "name": "WORK_LEADER_SIGN_ID", "title": "WORK_LEADER_SIGN_ID", "default": false },
+      { "name": "PREPARED_BY_ID", "title": "PREPARED_BY_ID", "default": false },
+      { "name": "AUTHORIZE_CODE", "title": "AUTHORIZE_CODE", "default": false },
+      { "name": "PM_NO", "title": "PM_NO", "default": false },
+      { "name": "PM_REVISION", "title": "PM_REVISION", "default": false },
+      { "name": "PROJECT_NO", "title": "PROJECT_NO", "default": false },
+      { "name": "WORK_DESCR_LO", "title": "Descripción Trabajo", "default": false },
+      { "name": "PLAN_HRS", "title": "Tiempo Ejecución", "default": false },
+      { "name": "ACTIVITY_SEQ", "title": "ACTIVITY_SEQ", "default": false },
+      { "name": "PRE_ACCOUNTING_ID", "title": "PRE_ACCOUNTING_ID", "default": false },
+      { "name": "LAST_ACTIVITY_DATE", "title": "LAST_ACTIVITY_DATE", "default": false },
+      { "name": "REQUIRED_START_DATE", "title": "Inicio Requerido", "default": false },
+      { "name": "REQUIRED_END_DATE", "title": "Última Finalización", "default": false },
+      { "name": "REPAIR_FLAG", "title": "OT Reparación", "default": false },
+      { "name": "CONTACT", "title": "CONTACT", "default": false },
+      { "name": "PHONE_NO", "title": "PHONE_NO", "default": false },
+      { "name": "CUSTOMER_NO", "title": "CUSTOMER_NO", "default": false },
+      { "name": "STD_JOB_ID", "title": "STD_JOB_ID", "default": false },
+      { "name": "ADDRESS_ID", "title": "ADDRESS_ID", "default": false },
+      { "name": "REFERENCE_NO", "title": "REFERENCE_NO", "default": false },
+      { "name": "FIXED_PRICE", "title": "FIXED_PRICE", "default": false },
+      { "name": "FIXED_PRICE_DB", "title": "FIXED_PRICE_DB", "default": false },
+      { "name": "FAULT_REP_FLAG", "title": "FAULT_REP_FLAG", "default": false },
+      { "name": "QUOTATION_ID", "title": "QUOTATION_ID", "default": false },
+      { "name": "CRITICALITY", "title": "Criticalidad", "default": false },
+      { "name": "GROUP_ID", "title": "Grupo", "default": false },
+      { "name": "CUST_ORDER_TYPE", "title": "CUST_ORDER_TYPE", "default": false },
+      { "name": "CUST_ORDER_NO", "title": "CUST_ORDER_NO", "default": false },
+      { "name": "PLANNED_MAN_HRS", "title": "Horas Man.", "default": false },
+      { "name": "MCH_CODE_CONTRACT", "title": "Planta Objeto", "default": false },
+      { "name": "MCH_CODE_DESCRIPTION", "title": "Descripción Objeto", "default": false },
+      { "name": "CONNECTION_TYPE", "title": "CONNECTION_TYPE", "default": false },
+      { "name": "CONNECTION_TYPE_DB", "title": "CONNECTION_TYPE_DB", "default": false },
+      { "name": "RECEIVE_ORDER_NO", "title": "RECEIVE_ORDER_NO", "default": false },
+      { "name": "REAL_S_DATE", "title": "F. Comienzo OT", "default": false },
+      { "name": "ADDRESS1", "title": "ADDRESS1", "default": false },
+      { "name": "ADDRESS2", "title": "ADDRESS2", "default": false },
+      { "name": "ADDRESS3", "title": "ADDRESS3", "default": false },
+      { "name": "ADDRESS4", "title": "ADDRESS4", "default": false },
+      { "name": "ADDRESS5", "title": "ADDRESS5", "default": false },
+      { "name": "ADDRESS6", "title": "ADDRESS6", "default": false },
+      { "name": "ADDRESS7", "title": "ADDRESS7", "default": false },
+      { "name": "CONTRACT_ID", "title": "CONTRACT_ID", "default": false },
+      { "name": "LINE_NO", "title": "LINE_NO", "default": false },
+      { "name": "AGREEMENT_ID", "title": "AGREEMENT_ID", "default": false },
+      { "name": "CURRENCY_CODE", "title": "CURRENCY_CODE", "default": false },
+      { "name": "SCHEDULING_CONSTRAINTS", "title": "SCHEDULING_CONSTRAINTS", "default": false },
+      { "name": "SCHEDULING_CONSTRAINTS_DB", "title": "SCHEDULING_CONSTRAINTS_DB", "default": false },
+      { "name": "OBJID", "title": "OBJID", "default": false },
+      { "name": "OBJVERSION", "title": "OBJVERSION", "default": false },
+      { "name": "OBJSTATE", "title": "OBJSTATE", "default": false },
+      { "name": "OBJEVENTS", "title": "OBJEVENTS", "default": false },
+      { "name": "TEMP_MOB_WO", "title": "TEMP_MOB_WO", "default": false },
+      { "name": "GENERA_EVENTO", "title": "GENERA_EVENTO", "default": false },
+      { "name": "REQUIERE_ANALISIS", "title": "REQUIERE_ANALISIS", "default": false },
+      { "name": "REQUIERE_QC", "title": "REQUIERE_QC", "default": false },
+      { "name": "CATEGORY_DESC", "title": "CATEGORY_DESC", "default": false },
+      { "name": "MCH_TYPE", "title": "MCH_TYPE", "default": false },
+      { "name": "MCH_TYPE_DESC", "title": "MCH_TYPE_DESC", "default": false },
+      { "name": "PLANNED_WEEK", "title": "PLANNED_WEEK", "default": false },
+      { "name": "COM_MAN_PRO", "title": "COM_MAN_PRO", "default": false },
+      { "name": "COM_MAN", "title": "COM_MAN", "default": false },
+      { "name": "COM_INT_MAN", "title": "COM_INT_MAN", "default": false },
+      { "name": "OT_REPROGRAMADA", "title": "OT_REPROGRAMADA", "default": false },
+      { "name": "OT_ESTADO_ANT", "title": "OT_ESTADO_ANT", "default": false },
+      { "name": "COM_IMP_ARE", "title": "COM_IMP_ARE", "default": false },
+      { "name": "FECHA_RECHEQUEO", "title": "FECHA_RECHEQUEO", "default": false },
+      { "name": "CONFIRMACION_2", "title": "CONFIRMACION_2", "default": false },
+      { "name": "CRITERIO_SEG", "title": "CRITERIO_SEG", "default": false },
+      { "name": "AGRUP_PROG", "title": "AGRUP_PROG", "default": false },
+      { "name": "OPCION_PP", "title": "OPCION_PP", "default": false },
+      { "name": "ORDER_GANTT", "title": "ORDER_GANTT", "default": false },
+      { "name": "VB_PLA", "title": "VB_PLA", "default": false },
+      { "name": "ANTIGUEDAD", "title": "ANTIGUEDAD", "default": false },
+      { "name": "PLAZO_PLANIF", "title": "PLAZO_PLANIF", "default": false },
+      { "name": "MANO_OBRA", "title": "MANO_OBRA", "default": false },
+      { "name": "COMENT_OTRAS_AREAS", "title": "COMENT_OTRAS_AREAS", "default": false },
+      { "name": "ORDEN_CAMBIO", "title": "ORDEN_CAMBIO", "default": false },
+      { "name": "ETAPA", "title": "ETAPA", "default": false },
+      { "name": "RIESGO_NUCLEAR", "title": "RIESGO_NUCLEAR", "default": false },
+      { "name": "RIESGO_RADIOLOG", "title": "RIESGO_RADIOLOG", "default": false },
+      { "name": "COMPLEJ_TAREA", "title": "COMPLEJ_TAREA", "default": false },
+      { "name": "EME", "title": "EME", "default": false },
+      { "name": "SEGUIMIENTO_PROG", "title": "SEGUIMIENTO_PROG", "default": false },
+      { "name": "COMENT_SEG_PROG", "title": "COMENT_SEG_PROG", "default": false },
+      { "name": "LOG_SEG_PROG", "title": "LOG_SEG_PROG", "default": false },
+      { "name": "FRECUENCIA", "title": "FRECUENCIA", "default": false },
+      { "name": "DISP_PROC_TEC", "title": "DISP_PROC_TEC", "default": false },
+      { "name": "REVISION_PAQ_TRAB", "title": "REVISION_PAQ_TRAB", "default": false },
+      { "name": "SISTEMA", "title": "Sistema", "default": false },
+      { "name": "REQUIERE_PPM", "title": "REQUIERE_PPM", "default": false },
+      { "name": "ANALIZA_EVENTO", "title": "Analiza Evento", "default": false },
+      { "name": "WO_NO_HIJAS", "title": "WO_NO_HIJAS", "default": false },
+      { "name": "EQUIPO_MADRE", "title": "EQUIPO_MADRE", "default": false },
+      { "name": "USUARIO_QC", "title": "USUARIO_QC", "default": false },
+      { "name": "USUARIO_CREACION", "title": "Creado Por", "default": false },
+      { "name": "LUNES", "title": "LUNES", "default": false },
+      { "name": "MARTES", "title": "MARTES", "default": false },
+      { "name": "MIERCOLES", "title": "MIERCOLES", "default": false },
+      { "name": "JUEVES", "title": "JUEVES", "default": false },
+      { "name": "VIERNES", "title": "VIERNES", "default": false },
+      { "name": "SABADO", "title": "SABADO", "default": false },
+      { "name": "DOMINGO", "title": "DOMINGO", "default": false },
+      { "name": "FECHA_GRACIA", "title": "FECHA_GRACIA", "default": false },
+      { "name": "FECHA_DIFERIMIENTO", "title": "Fecha Diferido", "default": false },
+      { "name": "ESTADO_PREVENTIVO", "title": "Estado Preventivo", "default": false },
+      { "name": "NOTAS_QC", "title": "NOTAS_QC", "default": false },
+      { "name": "TIENE_NOTAS_QC", "title": "TIENE_NOTAS_QC", "default": false },
+      { "name": "NOTAS_ING", "title": "NOTAS_ING", "default": false },
+      { "name": "TIENE_NOTAS_ING", "title": "TIENE_NOTAS_ING", "default": false },
+      { "name": "LIBERACION_PR", "title": "LIBERACION_PR", "default": false },
+      { "name": "SOL_SPC", "title": "SOL_SPC", "default": false },
+      { "name": "EST_PLA_SPC", "title": "EST_PLA_SPC", "default": false },
+      { "name": "SECCION_SPC", "title": "SECCION_SPC", "default": false },
+      { "name": "OBS_SPC", "title": "OBS_SPC", "default": false },
+      { "name": "LOG_OBS_SPC", "title": "LOG_OBS_SPC", "default": false },
+      { "name": "ORIGEN_SPC", "title": "ORIGEN_SPC", "default": false },
+      { "name": "LUG_EJEC_SPC", "title": "LUG_EJEC_SPC", "default": false },
+      { "name": "REQUIERE_TARJETA", "title": "REQUIERE_TARJETA", "default": false },
+      { "name": "OBS_TARJETA", "title": "OBS_TARJETA", "default": false },
+      { "name": "TARJETA_RETIRADA", "title": "TARJETA_RETIRADA", "default": false },
+      { "name": "NOTAS_CONC", "title": "NOTAS_CONC", "default": false },
+      { "name": "TEST_RESULT", "title": "TEST_RESULT", "default": false },
+      { "name": "TEST_COMMENT", "title": "TEST_COMMENT", "default": false },
+      { "name": "OK_ING", "title": "OK_ING", "default": false },
+      { "name": "OPO_D", "title": "OPO_D", "default": false },
+      { "name": "OPO_A", "title": "OPO_A", "default": false },
+      { "name": "ALARA", "title": "ALARA", "default": false },
+      { "name": "TESTNUMBER", "title": "TESTNUMBER", "default": false },
+      { "name": "SEGUIMIENTO", "title": "SEGUIMIENTO", "default": false },
+      { "name": "FIRMA_EVALUADOR", "title": "FIRMA_EVALUADOR", "default": false },
+      { "name": "NOVEDAD_SEMANAL", "title": "NOVEDAD_SEMANAL", "default": false }
     ]
   },
   {

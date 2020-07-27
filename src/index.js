@@ -2,6 +2,7 @@ const ora = require('ora')
 const figlet = require('figlet')
 const oracle = require('oracledb')
 const dbconfig = require('./db/config')
+const output = require('./output')
 const inquirer = require('inquirer')
 const views = require('./inquirer/')
 const tables = require('./db/tables.json')
@@ -21,7 +22,7 @@ const run = async () => {
   const table = await views.askIfsTable()
   const columns = await views.askTableColumns(table.title)
   const loading = ora({ spinner: 'line', text: 'Conectando...' }).start()
-
+  console.time('db')
   const cols = tables
     .find(t => t.title == table.title)
     .columns.filter(c => columns.columns.find(col => col == c.title))
@@ -32,10 +33,14 @@ const run = async () => {
     stringCol += cols[i] + ','
   }
   stringCol = stringCol.slice(0,-1)
-  // let connection = await oracle.getConnection({ ...dbconfig, ...credentials })
-  // const result = await connection.execute(`SELECT ${ stringCol } FROM IFSATA.ACTIVE_SEPARATE_OVERVIEW where WO_NO=159454`)
+  let connection = await oracle.getConnection({ ...dbconfig, ...credentials })
+  const result = await connection.execute(`SELECT ${ stringCol } FROM IFSATA.ACTIVE_SEPARATE_OVERVIEW`)
   // console.log(result)
-  // await connection.close()
+  await connection.close()
+  console.timeEnd('db')
+  console.time('excel')
+  await output(result.rows)
+  console.timeEnd('excel')
 
   loading.stop()
 }
