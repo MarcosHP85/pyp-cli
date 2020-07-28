@@ -6,6 +6,7 @@ const output = require('./output')
 const inquirer = require('inquirer')
 const views = require('./inquirer/')
 const tables = require('./db/tables.json')
+const { sqlCols } = require('./db/utils')
 const Configstore = require('configstore')
 const conf = new Configstore('pyp-cli')
 conf.set('test','OK')
@@ -23,23 +24,20 @@ const run = async () => {
   const columns = await views.askTableColumns(table.title)
   const loading = ora({ spinner: 'line', text: 'Conectando...' }).start()
   console.time('db')
-  const cols = tables
-    .find(t => t.title == table.title)
-    .columns.filter(c => columns.columns.find(col => col == c.title))
-    .map(col => col.name)
 
-  let stringCol = ''
-  for (let i=0; i < cols.length; i++) {
-    stringCol += cols[i] + ','
-  }
-  stringCol = stringCol.slice(0,-1)
-  let connection = await oracle.getConnection({ ...dbconfig, ...credentials })
-  const result = await connection.execute(`SELECT ${ stringCol } FROM IFSATA.ACTIVE_SEPARATE_OVERVIEW`)
-  // console.log(result)
-  await connection.close()
+  const stringCol = sqlCols(table, columns)
+  console.log(stringCol)
+  // let connection = await oracle.getConnection({ ...dbconfig, ...credentials })
+  // const result = await connection.execute(`SELECT ${ stringCol } FROM IFSATA.ACTIVE_SEPARATE_OVERVIEW`,[],{
+  //   prefetchRows:   1000,
+  //   fetchArraySize: 1000,
+  //   resultSet:      false
+  // })
+  // // console.log(result)
+  // await connection.close()
   console.timeEnd('db')
   console.time('excel')
-  await output(result.rows)
+  // await output(result.rows)
   console.timeEnd('excel')
 
   loading.stop()
